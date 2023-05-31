@@ -1,0 +1,352 @@
+@charset "UTF-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   	font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;   
+}
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 글꼴 */
+
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', '맑은고딕', Malgun Gothic, dotum, '돋음', arial, sans-serif;
+    /* 가로 스크롤 바 없애기 */
+    overflow-x: hidden;
+}
+
+
+/* 버튼 초기화 */
+
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+hr{
+	width: 85vw;
+	border:1px solid #e4e4e4;
+}
+
+
+.container {
+	width: 100%;
+}
+
+.header_wrap{
+	width: 100%;
+	height: 100px;
+	display: inline-block;
+}
+.logobox{
+	display: inline-block;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+
+/* 로그아웃/접속 안내 프로필 */
+.userbox{
+   font-size: 11px;
+   float: left;
+   height: 100%;
+   width: 60vw;
+   text-align: center;
+   
+}
+
+.userbox ul{
+	display: flex;	
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.userbox ul:nth-child(1){
+	height: 80%;
+}
+
+/* 리스트 제목 */
+.list_name{
+	font-size: 50px;
+	font-family : TmoneyRoundWindExtraBold;
+		font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+}
+
+/* 메뉴바 로그아웃 링크 */
+
+.userbox ul a,
+.userbox ul a:visited{
+	color: grey;
+    text-decoration: none;
+}
+.userbox ul a:hover{
+	color: red;
+	text-decoration: none;
+}
+
+
+/* 메뉴바 메뉴 */
+.menubar:nth-child(1){
+	border-right:1px solid #e4e4e4;
+}
+.menubar{
+	padding: 0 10px;
+	 font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+}
+
+/* search bar */
+
+.main_wrap{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.searchbox{
+	text-align: center;
+}
+
+.searchinput{
+	padding:0 auto;
+}
+
+.searchinput input{
+	width: 60vw;
+	padding: 5px 15px;
+	display: inline-block;
+	font-size: 15px;
+	border-radius: 50px;
+	border : 1px solid #e4e4e4;
+	 font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+}
+
+.searchinput input:focus{
+ 	outline: none;
+  	box-shadow: 0 0 0 0.5px grey;
+}
+
+.zoom{
+
+}
+
+
+
+/* 명함목록 리스트 */
+.card_list_wrap{
+	display: flex;
+	width: 100vw;
+	flex-direction: column; /* 세로 정렬 */
+	justify-content: center;
+	align-items: center;
+}
+
+
+.card_wrap{
+	display:flex;
+
+}
+
+.card_wrap:nth-child(n){
+	width: 80%;
+	border: 1px solid #e4e4e4;
+	padding: 5%;
+	margin-bottom: 1vh;
+}
+
+.card_wrap a,
+.card_wrap a:visited{
+	display:flex;
+	flex-direction:column;
+	text-decoration:none;
+	color: black;
+}
+
+
+
+.card_wrap:hover{
+	background-color: #e4e4e4;
+}
+
+
+.card_img a,
+.card_img a:visited{
+	display: flex;
+	flex-direction:column;
+	text-decoration:none;
+	justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.card_menu a,
+.card_menu a:visited{
+	display:inline-block;
+	color:grey;
+	 font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+}
+
+
+
+.card_img{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #e4e4e4;
+	padding-right: 5%;
+}
+
+.card_info{
+	display: flex;
+	flex-direction : column;
+	width: 65%;
+	margin-left: 5%;
+	font-size: 13px;
+}
+
+.card_name{
+	font-size: 20px;
+	font-weight:bold;
+	text-align:center;
+ 	letter-spacing: 5px;
+}
+
+.card_number{
+	margin-top: 7%;
+}
+
+
+
+/* 아이콘 이미지 */
+.card_number::before{
+			content:"";  
+			position:relative;  
+			left:0; 
+			top:0;
+            display:inline-block; 
+            width:8px; 
+            height:8px;
+            background:url('../img/phone-call.png') center no-repeat;
+            background-size:cover; z-index:0;
+            margin-right: 2%;
+}
+
+.card_address::before{
+			content:"";  
+			position:relative;  
+			left:0; 
+			top:0;
+            display:inline-block; 
+            width:8px; 
+            height:8px;
+            background:url('../img/address-point.png') center no-repeat;
+            background-size:cover; z-index:0;
+            margin-right: 2%;
+}
+
+.card_department::before{
+			content:"";  
+			position:relative;  
+			left:0; 
+			top:0;
+            display:inline-block; 
+            width:8px; 
+            height:8px;
+            background:url('../img/department.png') center no-repeat;
+            background-size:cover; z-index:0;
+            margin-right: 2%;
+}
+
+.card_position::before{
+			content:"";  
+			position:relative;  
+			left:0; 
+			top:0;
+            display:inline-block; 
+            width:8px; 
+            height:8px;
+            background:url('../img/position.png') center no-repeat;
+            background-size:cover; z-index:0;
+            margin-right: 2%;
+}
+
+
+/* 수정,삭제 링크 */
+
+.card_menu{
+	display: inline-block;
+	text-align: right;
+}
+
+.card_menu a{
+	color: grey;
+    text-decoration: none;
+}
+
+.card_function{
+	display: inline-block;
+	font-size: 6px;
+}
+
+
+
+@media all and (min-width:622px){ 
+	
+	.card_list_wrap{
+	flex-direction: row; /* 세로 정렬 */
+	flex-wrap: wrap;
+	width: 85vw;
+	text-align: left;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	}
+	
+	.card_wrap{
+	display:flex;
+	flex-direction: row;
+	}	
+	
+	.card_wrap:nth-child(n){
+	width: 39%;
+	border: 1px solid #e4e4e4;
+	padding: 5%;
+	margin-bottom: 1vh;
+	}
+ 	.card_wrap:nth-child(2n+1){
+		margin-right: 1vw;
+	}
+}
+
